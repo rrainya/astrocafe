@@ -9,8 +9,6 @@ $(document).ready(function () {
     const dep1 = gnbLi.children('a.dep1')
     const dep2 = gnbLi.children('ul.dep2')
 
-    console.log(dep1)
-
     gnbLi.on('mouseenter', function () {
         //dep2.css('display', 'block')
         //dep2.stop().fadeIn(300)
@@ -67,8 +65,6 @@ $(document).ready(function () {
 
         tabLink.removeClass('on')
         $(this).addClass('on')
-
     })
-
 
 }) ////// 문서가 준비되면 작업 끝
