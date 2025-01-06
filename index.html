@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중미산천문대 - 수도권에서 가장 많은 별을 볼 수 있는 천문대</title>
+    <!-- 1. 제이쿼리 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 2.1 xeicon 관련파일 -->
+    <link href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css" rel="stylesheet">
+
+    <!-- 2.2 스와이퍼 관련파일 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    
+    <!-- 3. 내가 작성한 css, js파일 -->
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#"><span class="blind">중미산천문대</span></a>
+                </h1>
+                <nav class="gnb-wrap">
+                    <ul id="gnb">
+                        <li>
+                            <a href="#" class="dep1">천문대소개</a>
+                            <ul class="dep2">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">시설안내</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">관람</a>
+                            <ul class="dep2">
+                                <li><a href="#">프로그램안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">소식·알림</a>
+                            <ul class="dep2">
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">커뮤니티</a>
+                            <ul class="dep2">
+                                <li><a href="#">자주묻는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <button class="sch"><span class="blind">검색</span></button>
+                    <a href="#" class="login"><span class="blind">로그인</span></a>
+                </div>
+            </div>
+        </header><!-- // header 끝 -->
+        <div class="main-wrap">
+            <div class="swiper" id="main-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/main_vis.png" alt="메인이미지">
+                        <div class="txt-con">
+                            <div class="txt-wrap">
+                                <p class="tit"><strong>중미산천문대</strong></p>
+                                <p class="txt"><em>수도권에서 가장 많은 별을 볼 수 있는 천문대</em></p>
+                            </div>
+                        </div>
+                    </div><!-- // swiper-slide 끝 -->
+                    <div class="swiper-slide">
+                        <img src="images/main_vis.png" alt="메인이미지">
+                        <div class="txt-con">
+                            <div class="txt-wrap">
+                                <p class="tit"><strong>두번째 슬라이드 제목작성</strong></p>
+                                <p class="txt"><em>두번째 슬라이드 설명작성</em></p>
+                            </div>
+                        </div>
+                    </div><!-- // swiper-slide 끝 -->
+                </div><!-- // swiper-wrapper 끝 -->
+            </div><!-- // .swiper #main-slide끝 -->
+            
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev">
+                <i class="xi-long-arrow-left xi-2x"></i>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="xi-long-arrow-right xi-2x"></i>
+            </div>
+
+            <div class="quick-link">
+                <div class="link-content">
+                    <a href="#" class="link1">일일 관람예약</a>
+                    <a href="#" class="link2">단체예약 신청</a>
+                </div>
+            </div>
+        </div>
+        <!-- 프로그램 영역 시작 -->
+        <section class="program-wrap">
+            <ul class="banner-list">
+                <li class="item">
+                    <a href="#">
+                        <img src="images/program_banner1.png" alt="당일별자리여행">
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="images/program_banner2.png" alt="단체프로그램안내">
+                    </a>
+                </li>
+            </ul>
+            <div class="tit-wrap">
+                <h2 class="tit">프로그램 안내</h2>
+                <a href="#" class="more">더보기</a>
+            </div>
+        </section><!-- // section 끝 -->
+        <!-- 알림소식 , 관람안내 영역 시작 -->
+        <div class="outer">
+            <section class="notice-wrap">
+                <div class="tab-menu">
+                    <h2 class="tit">알림·소식</h2>
+                    <div class="tabs">
+                        <a href="#" data-tab="#tab-con-1" class="on">공지사항</a>
+                        <a href="#" data-tab="#tab-con-2">이달의 관측대상</a>
+                        <a href="#" data-tab="#tab-con-3">재관측 안내</a>
+                    </div>
+                </div>
+                <div class="tab-con">
+                    <ul class="list" id="tab-con-1">
+                        <li>
+                            <a href="#">일일프로그램 예약취소 및 날짜변경 안내</a>
+                            <span class="date">2024-10-24</span>
+                        </li>
+                        <li>
+                            <a href="#">일일프로그램 예약취소 및 날짜변경 안내</a>
+                            <span class="date">2024-10-24</span>
+                        </li>
+                        <li>
+                            <a href="#">일일프로그램 예약취소 및 날짜변경 안내</a>
+                            <span class="date">2024-10-24</span>
+                        </li>
+                    </ul>
+                    <ul class="list" id="tab-con-2">
+                        <li>
+                            <a href="#">중미산천문대 12월 관측대상(2024년)</a>
+                            <span class="date">2024-11-25</span>
+                        </li>
+                        <li>
+                            <a href="#">중미산천문대 11월 관측대상(2024년)</a>
+                            <span class="date">2024-10-27</span>
+                        </li>
+                        <li>
+                            <a href="#">중미산천문대 10월 관측대상(2024년)</a>
+                            <span class="date">2024-09-27</span>
+                        </li>
+                    </ul>
+                    <ul class="list" id="tab-con-3">
+                        <li>
+                            <a href="#">12월 재관측안내</a>
+                            <span class="date">2024-10-24</span>
+                        </li>
+                        <li>
+                            <a href="#">11월 재관측안내</a>
+                            <span class="date">2024-10-24</span>
+                        </li>
+                        <li>
+                            <a href="#">10월 재관측안내</a>
+                            <span class="date">2024-10-24</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="info-wrap">
+                <h2 class="tit">관람안내</h2>
+                <p>
+                    <strong>0507-1319-0306</strong>
+                    <span>&nbsp;(네이버 스마트콜)</span>
+                </p>
+                <dl>
+                    <dt>관람시간</dt>
+                    <dd>월요일 ~ 일요일  오전 06:00 ~ 오후 11 : 00</dd>
+                    <dt>휴관안내</dt>
+                    <dd>화요일 휴무일</dd>
+                    <dt>휴관안내</dt>
+                    <dd>경기도 양평군 옥천면 중미산로 1268</dd>
+                </dl>
+            </section>
+        </div><!-- // outer 끝 -->
+        <footer id="footer">
+            <div class="foot_inner">
+                <div class="foot_top">
+                    <div class="foot_link">
+                        <a href="#">천문대 소개</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이메일무단수집거부</a>
+                    </div>
+                </div>
+                <div class="foot_bottom">
+                    <p class="foot_logo"><img src="images/foot_logo.png" alt="중미산천문대"></p>
+                    <div class="foot_info">
+                        <address>
+                            경기도 양평군 옥천면 중미산로 1268<br>
+                            문의전화 : 0507-1319-0306 (네이버 스마트콜) | 이메일 : jungmiastro@naver.com
+                        </address>
+                        <p class="copy">
+                            COPYRIGHT &copy; 2024 ASTROCAFE.KR ALL RIGHT RESERVES.
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </footer><!-- // footer 끝 --> 
+        <div class="quick_menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="txt">오시는 길</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="txt">일일 관람예약</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="txt">이달의 관측대상</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="txt">날씨확인</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- // wrap 끝 -->
+</body>
+</html>
